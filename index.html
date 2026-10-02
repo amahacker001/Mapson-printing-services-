@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mapson Printing Services | Sokoto, Nigeria</title>
+
+<meta name="description"
+content="Mapson Printing Services - Professional printing, branding and design services in Sokoto, Nigeria.">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  color:#172033;
+  background:#fff;
+  line-height:1.6;
+}
+
+a{text-decoration:none}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1000;
+  padding:14px 6%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(5,15,35,.97);
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  color:white;
+  font-weight:bold;
+  font-size:19px;
+}
+
+.logo-mark{
+  width:42px;
+  height:42px;
+  border-radius:10px;
+  background:linear-gradient(135deg,#00c6ff,#0066ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:22px;
+}
+
+.logo span{
+  color:#00c6ff;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:24px;
+}
+
+.nav-links a{
+  color:#fff;
+  font-size:14px;
+  font-weight:bold;
+}
+
+.nav-links a:hover{
+  color:#00c6ff;
+}
+
+/* HERO */
+
+.hero{
+  min-height:100vh;
+  padding:150px 7% 90px;
+  display:flex;
+  align-items:center;
+  color:white;
+  background:
+  linear-gradient(rgba(4,14,35,.88),rgba(4,14,35,.88)),
+  linear-gradient(135deg,#0066ff,#00c6ff);
+}
+
+.hero-content{
+  max-width:850px;
+}
+
+.badge{
+  display:inline-block;
+  padding:8px 15px;
+  border:1px solid rgba(255,255,255,.3);
+  border-radius:30px;
+  margin-bottom:20px;
+  color:#bcefff;
+}
+
+.hero h1{
+  font-size:clamp(42px,7vw,78px);
+  line-height:1.05;
+  margin-bottom:25px;
+}
+
+.hero h1 span{
+  color:#00d9ff;
+}
+
+.hero p{
+  font-size:19px;
+  max-width:700px;
+  color:#e2f5ff;
+  margin-bottom:32px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.btn{
+  display:inline-block;
+  padding:14px 23px;
+  border-radius:8px;
+  font-weight:bold;
+  border:2px solid transparent;
+  cursor:pointer;
+  transition:.3s;
+}
+
+.btn-primary{
+  background:#00c6ff;
+  color:#061426;
+}
+
+.btn-primary:hover{
+  background:white;
+  transform:translateY(-3px);
+}
+
+.btn-outline{
+  border-color:white;
+  color:white;
+}
+
+.btn-outline:hover{
+  background:white;
+  color:#061426;
+}
+
+/* SECTIONS */
+
+section{
+  padding:90px 7%;
+}
+
+.section-title{
+  text-align:center;
+  max-width:750px;
+  margin:0 auto 50px;
+}
+
+.section-title h2{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+.section-title p{
+  color:#687386;
+}
+
+/* SERVICES */
+
+.services{
+  background:#f6f9fc;
+}
+
+.service-grid{
+  max-width:1150px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.service-card{
+  background:white;
+  border:1px solid #e4e9ef;
+  border-radius:15px;
+  padding:28px;
+  transition:.3s;
+}
+
+.service-card:hover{
+  transform:translateY(-7px);
+  box-shadow:0 15px 35px rgba(0,0,0,.09);
+}
+
+.icon{
+  font-size:40px;
+  margin-bottom:12px;
+}
+
+.service-card h3{
+  margin-bottom:8px;
+}
+
+.price{
+  font-size:20px;
+  font-weight:bold;
+  color:#0066ff;
+  margin:15px 0;
+}
+
+.service-card p{
+  color:#687386;
+}
+
+/* GALLERY */
+
+.gallery-grid{
+  max-width:1150px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+
+.gallery-item{
+  height:230px;
+  border-radius:15px;
+  overflow:hidden;
+  position:relative;
+  background:linear-gradient(135deg,#0066ff,#00c6ff);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:25px;
+  font-weight:bold;
+}
+
+.gallery-item:nth-child(2){
+  background:linear-gradient(135deg,#101c3b,#0077b6);
+}
+
+.gallery-item:nth-child(3){
+  background:linear-gradient(135deg,#00a6a6,#0066ff);
+}
+
+.gallery-item:nth-child(4){
+  background:linear-gradient(135deg,#222,#0066ff);
+}
+
+.gallery-item:nth-child(5){
+  background:linear-gradient(135deg,#0066ff,#333);
+}
+
+.gallery-item:nth-child(6){
+  background:linear-gradient(135deg,#00c6ff,#172033);
+}
+
+.gallery-label{
+  background:rgba(0,0,0,.35);
+  padding:10px 18px;
+  border-radius:8px;
+}
+
+/* ORDER */
+
+.order{
+  background:#f6f9fc;
+}
+
+.order-container{
+  max-width:1050px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+  align-items:start;
+}
+
+.order-info{
+  background:#071426;
+  color:white;
+  border-radius:16px;
+  padding:40px;
+}
+
+.order-info h3{
+  font-size:30px;
+  margin-bottom:15px;
+  color:#00c6ff;
+}
+
+.order-info p{
+  color:#d1d9e5;
+  margin-bottom:20px;
+}
+
+.order-info ul{
+  list-style:none;
+}
+
+.order-info li{
+  margin:12px 0;
+}
+
+.order-form{
+  background:white;
+  padding:35px;
+  border-radius:16px;
+  box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.form-group{
+  margin-bottom:17px;
+}
+
+.form-group label{
+  display:block;
+  margin-bottom:6px;
+  font-weight:bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  width:100%;
+  padding:13px;
+  border:1px solid #d6dce5;
+  border-radius:7px;
+  font-size:15px;
+  outline:none;
+}
+
+.form-group textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:#0066ff;
+}
+
+/* LOCATION */
+
+.location{
+  background:#071426;
+  color:white;
+}
+
+.location-container{
+  max-width:1050px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:35px;
+}
+
+.location-card{
+  padding:35px;
+  border-radius:15px;
+  background:rgba(255,255,255,.05);
+  border:1px solid rgba(255,255,255,.1);
+}
+
+.location-card h3{
+  color:#00c6ff;
+  margin-bottom:15px;
+  font-size:26px;
+}
+
+.location-card p{
+  color:#d5dce5;
+  margin:8px 0;
+}
+
+.map-box{
+  min-height:300px;
+  border-radius:15px;
+  background:
+  linear-gradient(rgba(0,102,255,.35),rgba(0,198,255,.35)),
+  #182941;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:30px;
+}
+
+.map-pin{
+  font-size:55px;
+  margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:#f6f9fc;
+}
+
+.contact-grid{
+  max-width:950px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  background:white;
+  border-radius:14px;
+  padding:30px;
+  text-align:center;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
+}
+
+.contact-card .icon{
+  font-size:35px;
+}
+
+.contact-card h3{
+  margin-bottom:8px;
+}
+
+.contact-card a{
+  color:#0066ff;
+}
+
+/* FOOTER */
+
+footer{
+  background:#040b16;
+  color:white;
+  text-align:center;
+  padding:35px 7%;
+}
+
+footer p{
+  color:#adb8c6;
+  margin:5px;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:62px;
+  height:62px;
+  border-radius:50%;
+  background:#25D366;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:27px;
+  z-index:2000;
+  box-shadow:0 8px 25px rgba(0,0,0,.3);
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  .nav-links{
+    display:none;
+  }
+
+  section{
+    padding:70px 5%;
+  }
+
+  .service-grid,
+  .gallery-grid,
+  .contact-grid,
+  .order-container,
+  .location-container{
+    grid-template-columns:1fr;
+  }
+
+  .hero{
+    padding:130px 5% 70px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .section-title h2{
+    font-size:32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+  <a href="#home" class="logo">
+    <div class="logo-mark">M</div>
+    MAPSON<span>PRINTING</span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#location">Location</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="badge">
+      📍 Sokoto, Nigeria
+    </div>
+
+    <h1>
+      Mapson Printing
+      <span>Services</span>
+    </h1>
+
+    <p>
+      Professional printing, graphic design, branding and
+      customized printing solutions for individuals,
+      businesses, organizations and events.
+    </p>
+
+    <div class="buttons">
+
+      <a href="#order" class="btn btn-primary">
+        Place an Order
+      </a>
+
+      <a href="https://wa.me/2349013852501"
+         target="_blank"
+         class="btn btn-outline">
+        WhatsApp Us
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- SERVICES -->
+
+<section class="services" id="services">
+
+  <div class="section-title">
+
+    <h2>Our Services & Pricing</h2>
+
+    <p>
+      Below are sample starting prices. Contact us for an
+      exact quotation based on quantity, material and design.
+    </p>
+
+  </div>
+
+  <div class="service-grid">
+
+    <div class="service-card">
+      <div class="icon">🖨️</div>
+      <h3>General Printing</h3>
+      <p>
+        Documents, forms, reports and professional
+        business materials.
+      </p>
+      <div class="price">Request Quote</div>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🎨</div>
+      <h3>Graphic Design</h3>
+      <p>
+        Professional designs for businesses,
+        events and promotional campaigns.
+      </p>
+      <div class="price">Request Quote</div>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📇</div>
+      <h3>Business Cards</h3>
+      <p>
+        Clean and professional business cards
+        for individuals and companies.
+      </p>
+      <div class="price">Request Quote</div>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📢</div>
+      <h3>Flyers & Posters</h3>
+      <p>
+        Promotional flyers, posters and event
+        advertising materials.
+      </p>
+      <div class="price">Request Quote</div>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">🏷️</div>
+      <h3>Business Branding</h3>
+      <p>
+        Branding materials designed to give your
+        business a professional identity.
+      </p>
+      <div class="price">Request Quote</div>
+    </div>
+
+    <div class="service-card">
+      <div class="icon">📚</div>
+      <h3>Custom Printing</h3>
+      <p>
+        Customized printing solutions according
+        to your specific requirements.
+      </p>
+      <div class="price">Request Quote</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section id="gallery">
+
+  <div class="section-title">
+
+    <h2>Our Work</h2>
+
+    <p>
+      Examples of the types of printing and branding
+      projects we can provide.
+    </p>
+
+  </div>
+
+  <div class="gallery-grid">
+
+    <div class="gallery-item">
+      <div class="gallery-label">Business Cards</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-label">Flyers</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-label">Posters</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-label">Branding</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-label">Documents</div>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-label">Custom Printing</div>
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ORDER FORM -->
+
+<section class="order" id="order">
+
+  <div class="section-title">
+
+    <h2>Place an Order</h2>
+
+    <p>
+      Fill in your details and your order information.
+      The form will prepare a WhatsApp message for Mapson Printing Services.
+    </p>
+
+  </div>
+
+  <div class="order-container">
+
+    <div class="order-info">
+
+      <h3>Let's Print Your Idea</h3>
+
+      <p>
+        Tell us what you need and we will contact you
+        to discuss the details and quotation.
+      </p>
+
+      <ul>
+        <li>✓ Professional printing</li>
+        <li>✓ Graphic design</li>
+        <li>✓ Business branding</li>
+        <li>✓ Event materials</li>
+        <li>✓ Customized orders</li>
+      </ul>
+
+      <br>
+
+      <p>
+        <strong>CEO:</strong><br>
+        Aliyu Mahe Alkali
+      </p>
+
+    </div>
+
+
+    <form class="order-form" id="orderForm">
+
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label>Phone Number</label>
+        <input type="tel" id="phone" required>
+      </div>
+
+      <div class="form-group">
+        <label>Service</label>
+
+        <select id="service" required>
+
+          <option value="">
+            Select a service
+          </option>
+
+          <option>General Printing</option>
+          <option>Graphic Design</option>
+          <option>Business Cards</option>
+          <option>Flyers & Posters</option>
+          <option>Business Branding</option>
+          <option>Custom Printing</option>
+
+        </select>
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Quantity</label>
+
+        <input
+          type="text"
+          id="quantity"
+          placeholder="Example: 500 copies"
+          required>
+
+      </div>
+
+      <div class="form-group">
+
+        <label>Order Details</label>
+
+        <textarea
+          id="details"
+          placeholder="Describe what you need..."
+          required></textarea>
+
+      </div>
+
+      <button
+        type="submit"
+        class="btn btn-primary"
+        style="width:100%;border:none;">
+
+        Send Order on WhatsApp
+
+      </button>
+
+    </form>
+
+  </div>
+
+</section>
+
+
+<!-- LOCATION -->
+
+<section class="location" id="location">
+
+  <div class="section-title">
+
+    <h2 style="color:white">
+      Our Location
+    </h2>
+
+    <p style="color:#cbd4df">
+      Proudly serving customers in Sokoto, Nigeria.
+    </p>
+
+  </div>
+
+  <div class="location-container">
+
+    <div class="map-box">
+
+      <div class="map-pin">📍</div>
+
+      <h2>Sokoto, Nigeria</h2>
+
+      <p>
+        Mapson Printing Services
+      </p>
+
+    </div>
+
+    <div class="location-card">
+
+      <h3>Business Information</h3>
+
+      <p>
+        <strong>Company:</strong><br>
+        Mapson Printing Services
+      </p>
+
+      <p>
+        <strong>Location:</strong><br>
+        Sokoto State, Nigeria
+      </p>
+
+      <p>
+        <strong>CEO:</strong><br>
+        Aliyu Mahe Alkali
+      </p>
+
+      <p>
+        <strong>Phone:</strong><br>
+        +234 901 385 2501
+      </p>
+
+      <p>
+        <strong>Email:</strong><br>
+        aliyumahe70@gmail.com
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="contact" id="contact">
+
+  <div class="section-title">
+
+    <h2>Contact Mapson Printing Services</h2>
+
+    <p>
+      Get in touch for quotations, orders and business enquiries.
+    </p>
+
+  </div>
+
+  <div class="contact-grid">
+
+    <div class="contact-card">
+
+      <div class="icon">📱</div>
+
+      <h3>Phone</h3>
+
+      <a href="tel:+2349013852501">
+        +234 901 385 2501
+      </a>
+
+    </div>
+
+    <div class="contact-card">
+
+      <div class="icon">💬</div>
+
+      <h3>WhatsApp</h3>
+
+      <a
+        href="https://wa.me/2349013852501"
+        target="_blank">
+        Chat With Us
+      </a>
+
+    </div>
+
+    <div class="contact-card">
+
+      <div class="icon">✉️</div>
+
+      <h3>Email</h3>
+
+      <a href="mailto:aliyumahe70@gmail.com">
+        aliyumahe70@gmail.com
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+  <h2>MAPSON PRINTING SERVICES</h2>
+
+  <p>
+    Professional Printing • Design • Branding
+  </p>
+
+  <p>
+    CEO: Aliyu Mahe Alkali
+  </p>
+
+  <p>
+    Sokoto State, Nigeria
+  </p>
+
+  <p>
+    © <span id="year"></span>
+    Mapson Printing Services. All Rights Reserved.
+  </p>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  class="whatsapp"
+  href="https://wa.me/2349013852501"
+  target="_blank"
+  aria-label="WhatsApp">
+  ☎
+</a>
+
+
+<script>
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+document.getElementById("orderForm")
+.addEventListener("submit", function(event){
+
+  event.preventDefault();
+
+  const name =
+  document.getElementById("name").value;
+
+  const phone =
+  document.getElementById("phone").value;
+
+  const service =
+  document.getElementById("service").value;
+
+  const quantity =
+  document.getElementById("quantity").value;
+
+  const details =
+  document.getElementById("details").value;
+
+
+  const message =
+`Hello Mapson Printing Services,
+
+I would like to place an order.
+
+Name: ${name}
+
+My Phone: ${phone}
+
+Service: ${service}
+
+Quantity: ${quantity}
+
+Order Details:
+${details}
+
+Thank you.`;
+
+
+  const whatsappURL =
+  "https://wa.me/2349013852501?text=" +
+  encodeURIComponent(message);
+
+
+  window.open(whatsappURL, "_blank");
+
+});
+
+</script>
+
+</body>
+</html>
